@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Our Portfolio | Custom Apps & Web Design | CWW Ventures</title>
+<meta name="description" content="Browse our portfolio of cinematic websites, custom dashboards, and AI-powered app UIs. See how CWW Ventures delivers high-performance digital solutions."/>
+<meta name="keywords" content="web design portfolio, logo design portfolio, app UI design, dashboard design, Zebulon NC designer, Raleigh NC web designer"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="CWW Ventures"/>
+<link rel="canonical" href="https://www.cwwventures.com/work.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.cwwventures.com/work.html"/>
+<meta property="og:title" content="Work & Services — CWW Ventures"/>
+<meta property="og:description" content="Browse our portfolio of premium websites, dashboards, app UIs, and logo designs."/>
+<meta property="og:image" content="https://www.cwwventures.com/og-image.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Work & Services — CWW Ventures"/>
+<meta name="twitter:description" content="Browse our portfolio of premium websites, dashboards, app UIs, and logo designs."/>
+<meta name="twitter:image" content="https://www.cwwventures.com/og-image.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#04080f;--bg2:#080f1a;--surface:#0b1220;--surface2:#0f1928;
+  --accent:#146EF5;--accent2:#38b6e8;--accent3:#4d9fff;
+  --text:#f0f4fa;--text-mid:#6a8aaa;--text-dim:#3a5070;
+  --border:rgba(56,182,232,0.1);--border-accent:rgba(20,110,245,0.25);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;cursor:none;}
+
+#cursor{position:fixed;width:8px;height:8px;background:var(--accent2);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:width .3s,height .3s;mix-blend-mode:screen;}
+#cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(56,182,232,.5);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:transform .18s cubic-bezier(.16,1,.3,1),width .3s,height .3s,border-color .3s;}
+body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:56px;height:56px;border-color:var(--accent3);}
+
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;pointer-events:none;z-index:1;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:2rem 6vw;display:flex;align-items:center;justify-content:space-between;transition:all .6s cubic-bezier(.16,1,.3,1);}
+nav.scrolled{padding:1.2rem 6vw;background:rgba(4,8,15,.88);backdrop-filter:blur(32px) saturate(180%);-webkit-backdrop-filter:blur(32px) saturate(180%);border-bottom:1px solid var(--border);}
+.nav-logo{text-decoration:none;display:flex;flex-direction:column;line-height:1;}
+.nav-logo-main{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.18em;background:linear-gradient(90deg,#fff 0%,var(--accent2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-logo-sub{font-family:'Inter',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--text-mid);margin-top:.1rem;}
+.nav-links{display:flex;align-items:center;gap:3rem;list-style:none;}
+.nav-links a{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--text-mid);text-decoration:none;position:relative;transition:color .4s;}
+.nav-links a::before{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--accent3);transform:scaleX(0);transform-origin:right;transition:transform .5s cubic-bezier(.16,1,.3,1);}
+.nav-links a:hover,.nav-links a.active{color:var(--text);}
+.nav-links a:hover::before,.nav-links a.active::before{transform:scaleX(1);transform-origin:left;}
+.nav-links a.active{color:var(--accent2);}
+.nav-links a.active::before{background:var(--accent3);}
+.nav-cta{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:.65rem 1.8rem;border:1px solid var(--accent3);color:var(--accent2);text-decoration:none;position:relative;overflow:hidden;transition:color .4s;}
+.nav-cta::before{content:'';position:absolute;inset:0;background:var(--accent3);transform:translateX(-101%);transition:transform .5s cubic-bezier(.16,1,.3,1);}
+.nav-cta:hover{color:var(--bg);}.nav-cta:hover::before{transform:translateX(0);}
+.nav-cta span{position:relative;z-index:1;}
+.hamburger{display:none;flex-direction:column;gap:6px;cursor:none;background:none;border:none;padding:.5rem;}
+.hamburger span{display:block;width:26px;height:1px;background:var(--text);transition:transform .4s,opacity .4s;}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(4,8,15,.98);backdrop-filter:blur(40px);z-index:9998;flex-direction:column;align-items:center;justify-content:center;gap:3rem;opacity:0;pointer-events:none;transition:opacity .4s;}
+.mobile-menu.open{opacity:1;pointer-events:all;}
+.mobile-menu a{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;letter-spacing:.12em;color:var(--text);text-decoration:none;transition:color .3s;}
+.mobile-menu a:hover{color:var(--accent2);}
+
+/* ─── CURTAIN ─── */
+#curtain{position:fixed;inset:0;background:var(--bg);z-index:99990;display:flex;align-items:center;justify-content:center;transition:opacity 1.2s cubic-bezier(.77,0,.18,1);}
+#curtain.gone{opacity:0;pointer-events:none;}
+.curtain-logo{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,9rem);letter-spacing:.12em;background:linear-gradient(135deg,var(--accent3),var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0;animation:curtainLogo 1.4s .2s cubic-bezier(.16,1,.3,1) forwards;}
+@keyframes curtainLogo{0%{opacity:0;letter-spacing:.3em;filter:blur(20px);}60%{opacity:1;filter:blur(0);}100%{opacity:1;letter-spacing:.12em;}}
+
+/* ─── PARTICLES CANVAS ─── */
+canvas#particles{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;}
+
+/* ─── GRID LINES ─── */
+.hero-lines{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(20,110,245,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(20,110,245,.035) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 0%,transparent 100%);}
+
+/* ─── MARQUEE ─── */
+.marquee-wrap{border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;padding:1.2rem 0;background:var(--bg2);position:relative;z-index:4;}
+.marquee-track{display:flex;gap:4rem;width:max-content;animation:marquee 18s linear infinite;}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.marquee-item{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.25em;color:var(--text-dim);display:flex;align-items:center;gap:4rem;white-space:nowrap;}
+.marquee-dot{width:4px;height:4px;background:var(--accent);border-radius:50%;opacity:.6;}
+
+/* PAGE HEADER */
+.page-header{
+  padding:20vh 8vw 10vh;
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 60% 60% at 80% 50%,rgba(20,110,245,.07) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 60% at 10% 80%,rgba(20,110,245,.04) 0%,transparent 55%),
+    var(--bg);
+}
+.page-header::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--accent3),transparent);
+}
+.ph-label{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--accent3);margin-bottom:1.5rem;display:flex;align-items:center;gap:.8rem;position:relative;z-index:3;}
+.ph-label::before{content:'';width:28px;height:1px;background:var(--accent3);}
+.ph-title{position:relative;z-index:3;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(4rem,9vw,11rem);
+  line-height:.9;letter-spacing:.04em;
+  display:flex;flex-direction:column;
+  margin-bottom:1.5rem;
+}
+.ph-title .line1{
+  opacity:0;transform:translateX(-60px);
+  animation:slideInX 1.2s .2s cubic-bezier(.16,1,.3,1) forwards;
+}
+.ph-title .line2{
+  background:linear-gradient(110deg,var(--accent3) 0%,var(--accent2) 50%,var(--accent2) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  opacity:0;transform:translateX(60px);
+  animation:slideInXr 1.2s .35s cubic-bezier(.16,1,.3,1) forwards;
+}
+@keyframes slideInX{from{opacity:0;transform:translateX(-60px);}to{opacity:1;transform:translateX(0);}}
+@keyframes slideInXr{from{opacity:0;transform:translateX(60px);}to{opacity:1;transform:translateX(0);}}
+.ph-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.3rem);font-weight:300;color:rgba(240,244,250,.5);max-width:520px;line-height:1.75;opacity:0;animation:fadeUp 1s .6s forwards;position:relative;z-index:3;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* SERVICES */
+.services-sec{padding:10vh 8vw;}
+.sec-label{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--accent3);margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem;}
+.sec-label::before{content:'';width:28px;height:1px;background:var(--accent3);}
+.sec-heading{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,6rem);line-height:.95;letter-spacing:.04em;margin-bottom:3rem;}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);}
+.svc-cell{
+  background:var(--bg);
+  padding:4rem 3.5rem;
+  position:relative;overflow:hidden;
+  transition:background .5s;
+}
+.svc-cell::after{
+  content:'';position:absolute;top:0;left:0;width:0;height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--accent3));
+  transition:width .7s cubic-bezier(.16,1,.3,1);
+}
+.svc-cell:hover{background:var(--surface);}
+.svc-cell:hover::after{width:100%;}
+.svc-icon{
+  width:52px;height:52px;
+  border:1px solid var(--border-accent);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:2rem;font-size:1.4rem;
+  transition:border-color .4s,background .4s;
+}
+.svc-cell:hover .svc-icon{border-color:var(--accent3);background:rgba(201,168,76,.07);}
+.svc-num2{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.2em;color:var(--accent3);margin-bottom:.8rem;}
+.svc-title2{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:.06em;margin-bottom:1rem;}
+.svc-desc2{font-family:'Inter',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:var(--text-mid);margin-bottom:2rem;}
+.svc-features{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+.svc-features li{font-family:'Inter',sans-serif;font-size:.78rem;color:var(--text-mid);display:flex;align-items:center;gap:.7rem;}
+.svc-features li::before{content:'';width:16px;height:1px;background:var(--accent3);flex-shrink:0;}
+
+/* DIVIDER */
+.divider{
+  margin:4vh 8vw;
+  display:flex;align-items:center;gap:2rem;
+}
+.divider-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);}
+.divider-text{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.25em;color:var(--text-dim);}
+
+/* WORK / PORTFOLIO */
+.work-sec{padding:8vh 8vw 14vh;}
+.filter-pills{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:4rem;}
+.pill{
+  font-family:'Inter',sans-serif;font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  padding:.55rem 1.4rem;
+  border:1px solid var(--border);color:var(--text-mid);
+  background:transparent;cursor:none;
+  transition:all .4s cubic-bezier(.16,1,.3,1);
+}
+.pill.active,.pill:hover{
+  border-color:var(--accent3);color:var(--accent2);
+  background:rgba(201,168,76,.07);
+}
+
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--border);
+}
+.logo-card{
+  background:var(--bg);
+  overflow:hidden;position:relative;
+  cursor:none;
+  opacity:1;transition:opacity .5s,background .4s;
+}
+.logo-card.hidden{opacity:0;pointer-events:none;position:absolute;visibility:hidden;}
+.logo-card:hover{background:var(--surface);}
+.logo-img-wrap{
+  aspect-ratio:4/3;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  background:#000;
+}
+.logo-img-wrap img{
+  width:100%;height:100%;object-fit:contain;padding:2rem;
+  transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .5s;
+  filter:grayscale(15%) brightness(.95);
+}
+.logo-card:hover .logo-img-wrap img{transform:scale(1.07);filter:grayscale(0%) brightness(1.05);}
+.logo-meta{
+  padding:1.5rem 2rem;
+  border-top:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  transition:border-color .4s;
+}
+.logo-card:hover .logo-meta{border-color:var(--border-accent);}
+.logo-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.1em;}
+.logo-cat{font-family:'Inter',sans-serif;font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent3);margin-top:.2rem;}
+.logo-arrow{
+  font-size:1.2rem;color:var(--text-dim);
+  transition:transform .4s cubic-bezier(.16,1,.3,1),color .4s;
+}
+.logo-card:hover .logo-arrow{transform:translate(4px,-4px);color:var(--accent2);}
+
+/* LIGHTBOX */
+.lb-overlay{
+  position:fixed;inset:0;z-index:99990;
+  background:rgba(4,8,15,.97);
+  backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s cubic-bezier(.16,1,.3,1);
+}
+.lb-overlay.open{opacity:1;pointer-events:all;}
+.lb-inner{
+  max-width:900px;width:90%;
+  display:flex;flex-direction:column;
+  gap:2rem;
+  transform:scale(.94) translateY(20px);
+  transition:transform .5s cubic-bezier(.16,1,.3,1);
+}
+.lb-overlay.open .lb-inner{transform:scale(1) translateY(0);}
+.lb-img{
+  width:100%;max-height:65vh;
+  object-fit:contain;
+  background:rgba(0,0,0,.5);padding:2rem;
+}
+.lb-info{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;}
+.lb-title{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.08em;}
+.lb-desc{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;font-weight:300;color:rgba(240,244,250,.6);margin-top:.5rem;max-width:480px;line-height:1.7;}
+.lb-actions{display:flex;gap:1rem;align-items:center;flex-shrink:0;flex-wrap:wrap;}
+.lb-close{
+  font-family:'Inter',sans-serif;font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--text-dim);background:none;border:1px solid var(--border);
+  padding:.65rem 1.4rem;cursor:none;
+  transition:color .3s,border-color .3s;
+}
+.lb-close:hover{color:var(--text);border-color:var(--accent3);}
+.lb-live{
+  font-family:'Inter',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));
+  border:none;padding:.65rem 1.4rem;cursor:none;text-decoration:none;
+  display:none;align-items:center;gap:.5rem;
+  transition:opacity .3s,transform .3s;
+}
+.lb-live.visible{display:flex;}
+.lb-live:hover{opacity:.85;transform:translateY(-2px);}
+/* LIVE BADGE */
+.live-badge{
+  position:absolute;top:1rem;left:1rem;
+  font-family:'Inter',sans-serif;font-size:.55rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;padding:.3rem .8rem;
+  display:flex;align-items:center;gap:.4rem;z-index:2;
+}
+.live-dot{width:5px;height:5px;background:#4eff9e;border-radius:50%;box-shadow:0 0 6px #4eff9e;animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+
+/* CTA STRIP */
+.cta-strip{
+  margin:0 8vw 14vh;padding:6rem 8%;
+  background:var(--surface);border:1px solid var(--border);
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:space-between;gap:4rem;flex-wrap:wrap;
+}
+.cta-strip::before{content:'';position:absolute;top:-120px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(20,110,245,.12) 0%,transparent 70%);pointer-events:none;}
+.cta-strip h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,5rem);letter-spacing:.04em;line-height:.95;margin-bottom:.8rem;}
+.cta-strip p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.2rem;font-weight:300;color:rgba(240,244,250,.5);}
+.grad-text{background:linear-gradient(110deg,var(--accent3) 0%,var(--accent) 50%,var(--accent2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+
+/* BUTTONS */
+.btn-fill{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:.9rem 2.4rem;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;position:relative;overflow:hidden;transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s;box-shadow:0 0 40px rgba(20,110,245,.3);}
+.btn-fill::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transform:translateX(-200%);transition:transform .7s;}
+.btn-fill:hover{transform:translateY(-3px);box-shadow:0 0 60px rgba(20,110,245,.55);}
+.btn-fill:hover::after{transform:translateX(200%);}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:6rem 8vw 4rem;background:var(--bg2);}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:4rem;margin-bottom:5rem;}
+.footer-brand-name{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.15em;background:linear-gradient(90deg,#fff,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.6rem;}
+.footer-brand p{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:300;line-height:1.8;color:var(--text-mid);margin-top:.6rem;max-width:280px;}
+.footer-col h4{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--accent3);margin-bottom:1.5rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.9rem;}
+.footer-col a{font-family:'Inter',sans-serif;font-size:.85rem;font-weight:300;color:var(--text-mid);text-decoration:none;transition:color .3s,letter-spacing .3s;}
+.footer-col a:hover{color:var(--text);letter-spacing:.03em;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);padding-top:2.5rem;}
+.footer-copy{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:300;color:var(--text-dim);letter-spacing:.08em;}
+.footer-socials{display:flex;gap:1.5rem;}
+.footer-socials a{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--text-dim);text-decoration:none;transition:color .3s;position:relative;padding-bottom:2px;}
+.footer-socials a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--accent3);transform:scaleX(0);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.footer-socials a:hover{color:var(--accent2);}.footer-socials a:hover::after{transform:scaleX(1);}
+
+/* REVEAL */
+[data-reveal]{opacity:0;transform:translateY(50px);transition:opacity 1.1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1);}
+[data-reveal].on{opacity:1;transform:translateY(0);}
+[data-reveal][data-d="1"]{transition-delay:.12s;}[data-reveal][data-d="2"]{transition-delay:.24s;}[data-reveal][data-d="3"]{transition-delay:.36s;}[data-reveal][data-d="4"]{transition-delay:.48s;}
+
+@media(max-width:900px){
+  .svc-grid{grid-template-columns:1fr;}
+  .portfolio-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .cta-strip{flex-direction:column;text-align:center;}
+}
+@media(max-width:700px){
+  nav{padding:1.4rem 5vw;}.nav-links{display:none;}.nav-cta{display:none;}
+  .hamburger{display:flex;}.mobile-menu{display:flex;}
+  .page-header{padding:16vh 5vw 8vh;}
+  .services-sec,.work-sec{padding:8vh 5vw;}
+  .portfolio-grid{grid-template-columns:1fr;}
+  .cta-strip{margin:0 5vw 10vh;padding:4rem 6%;}
+  footer{padding:5rem 5vw 3rem;}.footer-top{grid-template-columns:1fr;}
+  .divider{margin:4vh 5vw;}
+  .lb-info{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- CURTAIN -->
+<div id="curtain">
+  <div class="curtain-logo">CWW</div>
+</div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">CWW Ventures</span>
+    <span class="nav-logo-sub">AI · Design · Development</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html" class="active">Work &amp; Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta"><span>Start a Project</span></a>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="work.html">Work &amp; Services</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="hero-lines"></div>
+  <canvas id="particles"></canvas>
+  <p class="ph-label">Our Craft</p>
+  <h1 class="ph-title">
+    <span class="line1">WORK &amp;</span>
+    <span class="line2">SERVICES.</span>
+  </h1>
+  <p class="ph-sub">Every deliverable we produce is AI-assisted, obsessively crafted, and built to make your brand impossible to ignore.</p>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">App Development <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Logo Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">AI-Powered <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Dashboards <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">App Development <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Logo Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">AI-Powered <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Dashboards <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-sec" id="services">
+  <p class="sec-label" data-reveal>What We Build</p>
+  <h2 class="sec-heading" data-reveal data-d="1">THE<br><span class="grad-text">OFFERINGS.</span></h2>
+  <div class="svc-grid">
+    <div class="svc-cell" data-reveal data-d="1">
+      <div class="svc-icon">🌐</div>
+      <div class="svc-num2">01 — Web Design</div>
+      <h3 class="svc-title2">Cinematic Websites</h3>
+      <p class="svc-desc2">We don't build templates. We architect custom digital experiences with scroll-triggered animations, magnetic interactions, and performance-obsessed code that loads in under a second.</p>
+      <ul class="svc-features">
+        <li>Custom design — zero templates</li>
+        <li>Scroll &amp; entrance animations</li>
+        <li>Mobile-first responsive build</li>
+        <li>SEO structure built-in</li>
+        <li>Delivered in days, not months</li>
+      </ul>
+    </div>
+    <div class="svc-cell" data-reveal data-d="2">
+      <div class="svc-icon">⚡</div>
+      <div class="svc-num2">02 — App Development</div>
+      <h3 class="svc-title2">Web Apps &amp; SaaS</h3>
+      <p class="svc-desc2">Customer portals, SaaS products, booking systems, and internal tools. Built with clean architecture and interfaces your users will actually enjoy using.</p>
+      <ul class="svc-features">
+        <li>React / Next.js / Node.js</li>
+        <li>User auth &amp; role management</li>
+        <li>API integrations &amp; webhooks</li>
+        <li>Real-time data &amp; live updates</li>
+        <li>Scalable infrastructure</li>
+      </ul>
+    </div>
+    <div class="svc-cell" data-reveal data-d="3">
+      <div class="svc-icon">📊</div>
+      <div class="svc-num2">03 — Dashboards</div>
+      <h3 class="svc-title2">Data Visualization</h3>
+      <p class="svc-desc2">Analytics dashboards, admin panels, and KPI interfaces that turn raw data into insight. Dark-mode by default. Pixel-perfect. Fast enough that your data never feels like it's loading.</p>
+      <ul class="svc-features">
+        <li>Custom chart components</li>
+        <li>Real-time data sync</li>
+        <li>Multi-role access control</li>
+        <li>Export / report generation</li>
+        <li>Dark-mode precision UI</li>
+      </ul>
+    </div>
+    <div class="svc-cell" data-reveal data-d="4">
+      <div class="svc-icon">✦</div>
+      <div class="svc-num2">04 — Logo Design</div>
+      <h3 class="svc-title2">Brand Identity</h3>
+      <p class="svc-desc2">AI-assisted logo design that moves at speed without sacrificing taste. Mark, wordmark, color palette, and usage guidelines — everything your brand needs to look like it cost ten times more.</p>
+      <ul class="svc-features">
+        <li>AI-powered iteration cycle</li>
+        <li>Primary mark + wordmark</li>
+        <li>Color system &amp; typography</li>
+        <li>Full vector files (SVG, AI)</li>
+        <li>Brand usage guidelines</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider" data-reveal>
+  <span class="divider-line"></span>
+  <span class="divider-text">Portfolio</span>
+  <span class="divider-line"></span>
+</div>
+
+<!-- PORTFOLIO -->
+<section class="work-sec" id="work">
+  <p class="sec-label" data-reveal>Selected Work</p>
+  <h2 class="sec-heading" data-reveal data-d="1">ALL<br><span class="grad-text">PROJECTS.</span></h2>
+
+  <div class="filter-pills" data-reveal data-d="2">
+    <button class="pill active" data-filter="all">All</button>
+    <button class="pill" data-filter="app">Apps &amp; Dashboards</button>
+    <button class="pill" data-filter="logo">Logo Design</button>
+    <button class="pill" data-filter="motorsports">Motorsports</button>
+    <button class="pill" data-filter="automotive">Automotive</button>
+    <button class="pill" data-filter="construction">Construction</button>
+  </div>
+
+  <div class="portfolio-grid" id="portfolio-grid">
+
+    <!-- ── APPS & DASHBOARDS ── -->
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Live Website" data-desc="Full production website for Carolina Wheel Werkz. Dark-mode, bold typography, cyan accents. Features an Instant Estimator with live pricing, service catalog, booking flow, customer portal login, and a zip-code radius checker. Built with React + TypeScript + Firebase." data-link="https://cww-wheel-app.vercel.app">
+      <div class="logo-img-wrap"><img src="https://sc02.alicdn.com/kf/Aa2cb0962578c405bbc042afc4bcfb8dd2.png" alt="Carolina Wheel Werkz Live Site" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Carolina Wheel Werkz — Live Site</div><div class="logo-cat">Web App · Live</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Mobile App" data-desc="Full-stack mobile app for a rim repair & powder coating shop. Public-facing estimator, staff login, live repair tracking, and customer portal — all in one dark-mode native experience.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A1ee97a10baca4c2692faa8f233608100W.jpeg" alt="Carolina Wheel Werkz App" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Carolina Wheel Werkz</div><div class="logo-cat">Mobile App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Staff Login" data-desc="Secure staff access portal with role-based authentication. Separate flows for admins and technicians with authorized-only access gating.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Aec8d41e5320145819ea56db8fef2d737j.jpeg" alt="CWW Staff Login" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW — Staff Login</div><div class="logo-cat">Mobile App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Analytics Dashboard" data-desc="Revenue trends, repairs by type, and active job tracking in a real-time admin dashboard. Built for shop owners who need instant operational clarity.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A19bc7065217e41aea1b767bc443f1b95g.jpeg" alt="CWW Analytics" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW — Analytics</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Customer Dashboard" data-desc="Role-based customer dashboard with KPI cards for wheels in shop, revenue, active repairs, and powder coat queue. Live data, bottom tab navigation.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A53e8d18e71ce457ea9e32bce8a1f7592E.jpeg" alt="CWW Customer Dashboard" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW — Customer Dashboard</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Repairs Manager" data-desc="Live repair job management with status filtering (In Progress, Queued, Completed), job ID tracking, customer info, and service details in a clean table view.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A3fe46de02da54a868a6cb0e7a460a4b2a.png" alt="CWW Repairs Manager" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW — Repairs Manager</div><div class="logo-cat">App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Public Estimator" data-desc="Customer-facing estimate app with location info, click-to-call, and service inquiry. Clean dark UI with bottom navigation for Home, Estimate, and Admin.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Ad3eee29d79dd463eaeabe66d6bbc1d8ap.jpeg" alt="CWW Estimator" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW — Public Estimator</div><div class="logo-cat">Mobile App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Damage Assessment" data-desc="Interactive service configurator for selecting wheel count and repair services with dynamic pricing. Checkboxes, wheel selectors, and base rate display.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A8b96297259ec481191cd5e3f683e43628.jpeg" alt="CWW Damage Assessment" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW — Damage Assessment</div><div class="logo-cat">Mobile App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Medical Practice Dashboard" data-desc="Light-mode clinical dashboard with appointment overview, patient financials, quick actions, and a full daily schedule view. Designed for front-desk and administrative staff.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A39bb67e4fc7545c08c1e2bf72096b7e7J.jpeg" alt="Medical Dashboard" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Medical Practice Dashboard</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="AI Vet — Health Trend Analysis" data-desc="AI-powered veterinary practice management system with predictive health analytics, trend detection, geographic health mapping, and real-time population insights.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A5a01deb95cf7437cb900ae1dbece4997u.jpeg" alt="AI Vet Dashboard" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">AI Vet — Health Trends</div><div class="logo-cat">AI Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Rhythm Admin — Medical Dashboard" data-desc="Full-featured dark-mode hospital admin panel with patient vitals, appointment tracking, doctor profiles, revenue charts, and multi-department KPI cards.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A7b2eafacd20241a181eb170dd9b5a905j.jpeg" alt="Rhythm Admin" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Rhythm Admin</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Therapist Portal — Dr. Carter" data-desc="Private practice clinical portal with session scheduling, patient billing, message center, and recovery progress tracking. Dark-mode with glassmorphism card design.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A8026dd32bdef4d1ca6b777536b853d51D.jpeg" alt="Therapist Portal" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Therapist Portal</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="WebWeave — Website Builder" data-desc="No-code website builder platform with live design editing, responsive previews across desktop/mobile/tablet, element library, and advanced CSS controls.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A50b9117727d54dc782c7e21e97d63de97.jpeg" alt="WebWeave Builder" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">WebWeave Builder</div><div class="logo-cat">SaaS App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="PowderCoat Pro — Login" data-desc="Branded login screen for PowderCoat Pro, a shop management SaaS for powder coating businesses. Clean entry point with role-based dashboard routing.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Af2922fe2a77a4b59bbf2655d2f4aadd59.png" alt="PowderCoat Pro Login" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">PowderCoat Pro — Login</div><div class="logo-cat">SaaS App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="PowderCoat Pro — Dashboard" data-desc="Full shop management dashboard with active job count, revenue tracking, recent jobs table, upcoming schedule, and customer management — built for powder coat shop owners.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A647e9eb8b51f41a39223afe1dee8f512O.png" alt="PowderCoat Pro Dashboard" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">PowderCoat Pro — Dashboard</div><div class="logo-cat">SaaS App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="PowderCoat Pro — New Job" data-desc="Job creation modal with customer selection, service type, wheel configuration, pricing breakdown, and custom color match options. Built for fast front-desk intake.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A07abe8b4a5ef449f88e53e54cac2dc7dc.png" alt="PowderCoat Pro New Job" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">PowderCoat Pro — New Job</div><div class="logo-cat">SaaS App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Carolina Wheel Werkz — Sign In" data-desc="Customer-facing portal sign-in with name input and role selector. Simple, branded, and fast — designed to get customers into their repair tracking portal without friction.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A811b5263110345a5aca2fc9db732af31Z.jpeg" alt="CWW Sign In" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW — Customer Sign In</div><div class="logo-cat">Mobile App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="BayForge Auto Repair — Dashboard" data-desc="Full-featured auto repair shop management system. Revenue trend charts, today's appointments, active work orders, customer & vehicle management, inventory, and admin controls. Dark mode with teal/cyan accents.">
+      <div class="logo-img-wrap"><img src="https://sc02.alicdn.com/kf/Abb19838afc714acf8acb9f56e1f4200cd.png" alt="BayForge Dashboard" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">BayForge Auto Repair</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="BayForge Auto Repair — Work Orders" data-desc="Work order management view showing active repairs, customer info, vehicle details, and status tracking (in-progress, pending). Sidebar navigation with full business module access.">
+      <div class="logo-img-wrap"><img src="https://sc02.alicdn.com/kf/Aa17f8d9bef744c36b8ec7ae4c3f08a38q.png" alt="BayForge Work Orders" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">BayForge — Work Orders</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="VetCore — Veterinary Clinic Dashboard" data-desc="Polished vet clinic management platform. Daily appointment agenda with Waiting/In Exam/Treatment/Ready status cards, patient search, revenue today, low stock alerts, and doctor profile. Dark navy with teal accents.">
+      <div class="logo-img-wrap"><img src="https://sc02.alicdn.com/kf/Ab6cd98c37549456c9adcd71949ac6428t.png" alt="VetCore Dashboard" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">VetCore Clinic</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="VetCore — Patient Agenda View" data-desc="Live patient room tracking — Luna, Max, Bella across Room 1, 2, and 3 with real-time status. Card-based layout with avatar initials, appointment time, and room assignment. Sidebar with full clinic module nav.">
+      <div class="logo-img-wrap"><img src="https://sc02.alicdn.com/kf/A5e36dcef22e64c69a97876ead4bcd21fr.png" alt="VetCore Agenda" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">VetCore — Patient Rooms</div><div class="logo-cat">Dashboard</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="PowderCoat Pro — Business Dashboard" data-desc="Powder coat shop management SaaS with a bold orange-on-dark login screen. Secure admin entry point with password gating and branded PCP identity. Built for small business powder coating operations.">
+      <div class="logo-img-wrap"><img src="https://sc02.alicdn.com/kf/A0a478342b6b94982a23824c43e87b2adL.png" alt="PowderCoat Pro" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">PowderCoat Pro</div><div class="logo-cat">SaaS App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="app" data-title="Forge — Fitness & Workout App" data-desc="Mobile-first fitness tracking app with circular activity rings for calories, steps, and minutes. Daily workout recommendation cards, full body burn programs, and bottom nav for Home, Workouts, Progress, and Profile.">
+      <div class="logo-img-wrap"><img src="https://sc02.alicdn.com/kf/A6d327c1e41b342cb8a152be45557bc0at.png" alt="Forge Fitness App" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Forge — Fitness App</div><div class="logo-cat">Mobile App</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <!-- ── LOGOS ── -->
+    <div class="logo-card" data-cat="logo motorsports" data-title="Oneal Motorsports" data-desc="Primary identity for an elite motorsports brand. Bold, speed-forward, built for track and merch.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A80dabae2a34c4a5fa7558d73539f5638f.png" alt="Oneal Motorsports" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Oneal Motorsports</div><div class="logo-cat">Motorsports</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo motorsports" data-title="Oneal Motorsports — Alternate" data-desc="Secondary colorway and lockup variant for the Oneal Motorsports brand system.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A13c1464aceaf45cb8ab6707f9b2a17b29.png" alt="Oneal Motorsports Alt" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Oneal Motorsports — Alt</div><div class="logo-cat">Motorsports</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo automotive" data-title="J. Mills Tuning" data-desc="Performance tuning brand identity. Aggressive typography meets precision engineering aesthetic.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Ae96e7cb36e9043439e1a58de948f9e4ep.jpeg" alt="J. Mills Tuning" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">J. Mills Tuning</div><div class="logo-cat">Automotive</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo construction" data-title="Tom Peters Construction" data-desc="Trustworthy, structural identity for a construction contractor. Built for signage, workwear, and digital.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A9facefc1ff63454b9b7cf9137e938e285.png" alt="Tom Peters Construction" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Tom Peters Construction</div><div class="logo-cat">Construction</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo automotive" data-title="ProFenders" data-desc="Fender rolling specialist. The mark communicates precision and speed — recognized at first glance.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A5f5b954d572e410d988d11aa7592b628Q.png" alt="ProFenders" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">ProFenders</div><div class="logo-cat">Automotive</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo construction" data-title="IWC Sealcoating" data-desc="Clean, professional identity for a sealcoating and paving company. Instantly conveys reliability.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A0e1bac508bb644c08a53caf391e907561.png" alt="IWC Sealcoating" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">IWC Sealcoating</div><div class="logo-cat">Construction</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo automotive" data-title="TruStreet Solutions" data-desc="Primary brand mark for an automotive services company focused on street-ready performance solutions.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Af0120e9bd2474da390d1b7467f429440s.png" alt="TruStreet Solutions" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">TruStreet Solutions</div><div class="logo-cat">Automotive</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo automotive" data-title="TruStreet — Background Variants" data-desc="Dark and light background variants of the TruStreet Solutions brand for versatile application.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Ac3e31431156543bb9fe5581d2ec025a7l.png" alt="TruStreet Variants" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">TruStreet — BG Variants</div><div class="logo-cat">Automotive</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo automotive" data-title="TrueStreet Style Variants" data-desc="Extended style variants exploring typographic and color system flexibility for TrueStreet.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Afc9023198d354f73ac2ceddd916a8914i.png" alt="TrueStreet Style" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">TrueStreet Style Variants</div><div class="logo-cat">Automotive</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo automotive" data-title="Precision Fab &amp; Wiring" data-desc="Identity for a precision fabrication and wiring specialist. Technical, precise, built for a trade audience.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/Af0809db7759e4faa8aabd8d26ff3191fp.png" alt="Precision Fab" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Precision Fab &amp; Wiring</div><div class="logo-cat">Automotive</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo automotive" data-title="Precision Fab — Alternate" data-desc="Alternate lockup and icon-only variant for Precision Fabrication & Wiring.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A2a2efd1d4cf04a909049843b310f23deY.png" alt="Precision Fab Alt" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">Precision Fab — Alt</div><div class="logo-cat">Automotive</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+    <div class="logo-card" data-cat="logo brand" data-title="CWW Ventures" data-desc="Our own brand mark — the AI-powered design studio. Clean, authoritative, unmistakably premium.">
+      <div class="logo-img-wrap"><img src="https://sc01.alicdn.com/kf/A2c81254cd636482d9bdf367d1c0bf356d.png" alt="CWW Ventures" loading="lazy"/></div>
+      <div class="logo-meta"><div><div class="logo-name">CWW Ventures</div><div class="logo-cat">Brand Identity</div></div><span class="logo-arrow">↗</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip" data-reveal>
+  <div>
+    <h2>READY TO BUILD<br><span class="grad-text">SOMETHING ICONIC?</span></h2>
+    <p>We respond within 24 hours. Most projects launch within a week.</p>
+  </div>
+  <a href="contact.html" class="btn-fill">Start Your Project</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-name">CWW Ventures</div>
+      <p>AI · Logo · Apps · Web Design. We build digital experiences that make people stop and say — <em>damn.</em></p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Web Design</a></li>
+        <li><a href="#services">App Development</a></li>
+        <li><a href="#services">Dashboards</a></li>
+        <li><a href="#services">Logo Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work &amp; Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:cwwventures20@gmail.com">cwwventures20@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 CWW Ventures — All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#">Instagram</a><a href="#">Twitter / X</a><a href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb-overlay" id="lb" role="dialog" aria-modal="true">
+  <div class="lb-inner">
+    <img id="lb-img" class="lb-img" src="" alt=""/>
+    <div class="lb-info">
+      <div>
+        <div class="lb-title" id="lb-title"></div>
+        <p class="lb-desc" id="lb-desc"></p>
+      </div>
+      <div class="lb-actions">
+        <a class="lb-live" id="lb-live" href="#" target="_blank" rel="noopener"><span class="live-dot"></span> View Live</a>
+        <button class="lb-close" id="lb-close">Close ✕</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/work.js"></script>
+</body>
+</html>

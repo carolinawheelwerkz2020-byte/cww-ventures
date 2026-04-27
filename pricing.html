@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Transparent Pricing for Web & App Development | CWW Ventures</title>
+<meta name="description" content="View transparent pricing for AI-powered web design, logo identities, and custom app UI. Professional agency results at startup speed."/>
+<meta name="keywords" content="web design pricing, logo design cost, app UI price, dashboard design cost, affordable web design Zebulon NC, Raleigh web design"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="CWW Ventures"/>
+<link rel="canonical" href="https://www.cwwventures.com/pricing.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.cwwventures.com/pricing.html"/>
+<meta property="og:title" content="Pricing — CWW Ventures"/>
+<meta property="og:description" content="Transparent pricing for web design, logo design, dashboards, and app UI. Starting at $350."/>
+<meta property="og:image" content="https://www.cwwventures.com/og-image.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Pricing — CWW Ventures"/>
+<meta name="twitter:description" content="Transparent pricing for web design, logo design, dashboards, and app UI. Starting at $350."/>
+<meta name="twitter:image" content="https://www.cwwventures.com/og-image.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#04080f;--bg2:#080f1a;--surface:#0b1220;--surface2:#0f1928;
+  --accent:#146EF5;--accent2:#38b6e8;--accent3:#4d9fff;
+  --text:#f0f4fa;--text-mid:#6a8aaa;--text-dim:#3a5070;
+  --border:rgba(56,182,232,0.1);--border-accent:rgba(20,110,245,0.25);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;cursor:none;}
+
+#cursor{position:fixed;width:8px;height:8px;background:var(--accent2);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);mix-blend-mode:screen;}
+#cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(56,182,232,.5);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:transform .18s cubic-bezier(.16,1,.3,1),width .3s,height .3s,border-color .3s;}
+body:has(a:hover) #cursor-ring,body:has(button:hover) #cursor-ring{width:56px;height:56px;border-color:var(--accent3);}
+
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;pointer-events:none;z-index:1;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:2rem 6vw;display:flex;align-items:center;justify-content:space-between;transition:all .6s cubic-bezier(.16,1,.3,1);}
+nav.scrolled{padding:1.2rem 6vw;background:rgba(4,8,15,.88);backdrop-filter:blur(32px) saturate(180%);-webkit-backdrop-filter:blur(32px) saturate(180%);border-bottom:1px solid var(--border);}
+.nav-logo{text-decoration:none;display:flex;flex-direction:column;line-height:1;}
+.nav-logo-main{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.18em;background:linear-gradient(90deg,#fff 0%,var(--accent2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-logo-sub{font-family:'Inter',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--text-mid);margin-top:.1rem;}
+.nav-links{display:flex;align-items:center;gap:3rem;list-style:none;}
+.nav-links a{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--text-mid);text-decoration:none;position:relative;transition:color .4s;}
+.nav-links a::before{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--accent3);transform:scaleX(0);transform-origin:right;transition:transform .5s cubic-bezier(.16,1,.3,1);}
+.nav-links a:hover,.nav-links a.active{color:var(--text);}
+.nav-links a:hover::before,.nav-links a.active::before{transform:scaleX(1);transform-origin:left;}
+.nav-links a.active{color:var(--accent2);}.nav-links a.active::before{background:var(--accent3);}
+.nav-cta{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:.65rem 1.8rem;border:1px solid var(--accent3);color:var(--accent2);text-decoration:none;position:relative;overflow:hidden;transition:color .4s;}
+.nav-cta::before{content:'';position:absolute;inset:0;background:var(--accent3);transform:translateX(-101%);transition:transform .5s cubic-bezier(.16,1,.3,1);}
+.nav-cta:hover{color:var(--bg);}.nav-cta:hover::before{transform:translateX(0);}
+.nav-cta span{position:relative;z-index:1;}
+.hamburger{display:none;flex-direction:column;gap:6px;cursor:none;background:none;border:none;padding:.5rem;}
+.hamburger span{display:block;width:26px;height:1px;background:var(--text);transition:transform .4s,opacity .4s;}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(4,8,15,.98);backdrop-filter:blur(40px);z-index:9998;flex-direction:column;align-items:center;justify-content:center;gap:3rem;opacity:0;pointer-events:none;transition:opacity .4s;}
+.mobile-menu.open{opacity:1;pointer-events:all;}
+.mobile-menu a{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;letter-spacing:.12em;color:var(--text);text-decoration:none;transition:color .3s;}
+.mobile-menu a:hover{color:var(--accent2);}
+
+/* CURTAIN */
+#curtain{position:fixed;inset:0;background:var(--bg);z-index:99990;display:flex;align-items:center;justify-content:center;transition:opacity 1.2s cubic-bezier(.77,0,.18,1);}
+#curtain.gone{opacity:0;pointer-events:none;}
+.curtain-logo{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,9rem);letter-spacing:.12em;background:linear-gradient(135deg,var(--accent3),var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0;animation:curtainLogo 1.4s .2s cubic-bezier(.16,1,.3,1) forwards;}
+@keyframes curtainLogo{0%{opacity:0;letter-spacing:.3em;filter:blur(20px);}60%{opacity:1;filter:blur(0);}100%{opacity:1;letter-spacing:.12em;}}
+
+canvas#particles{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;}
+.hero-lines{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(20,110,245,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(20,110,245,.035) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 0%,transparent 100%);}
+
+/* MARQUEE */
+.marquee-wrap{border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;padding:1.2rem 0;background:var(--bg2);position:relative;z-index:4;}
+.marquee-track{display:flex;gap:4rem;width:max-content;animation:marquee 22s linear infinite;}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.marquee-item{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.25em;color:var(--text-dim);display:flex;align-items:center;gap:4rem;white-space:nowrap;}
+.marquee-dot{width:4px;height:4px;background:var(--accent);border-radius:50%;opacity:.6;}
+
+/* PAGE HEADER */
+.page-header{
+  padding:20vh 8vw 10vh;
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 50% 70% at 30% 40%,rgba(20,110,245,.05) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 60% at 85% 60%,rgba(20,110,245,.07) 0%,transparent 55%),
+    var(--bg);
+}
+.page-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent3),transparent);}
+.ph-label{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--accent3);margin-bottom:1.5rem;display:flex;align-items:center;gap:.8rem;position:relative;z-index:3;}
+.ph-label::before{content:'';width:28px;height:1px;background:var(--accent3);}
+.ph-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,9vw,11rem);line-height:.9;letter-spacing:.04em;display:flex;flex-direction:column;margin-bottom:1.5rem;position:relative;z-index:3;}
+.ph-title .line1{opacity:0;transform:translateX(-60px);animation:slideInX 1.2s .2s cubic-bezier(.16,1,.3,1) forwards;}
+.ph-title .line2{background:linear-gradient(110deg,var(--accent3) 0%,var(--accent) 50%,var(--accent2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0;transform:translateX(60px);animation:slideInXr 1.2s .35s cubic-bezier(.16,1,.3,1) forwards;}
+@keyframes slideInX{from{opacity:0;transform:translateX(-60px);}to{opacity:1;transform:translateX(0);}}
+@keyframes slideInXr{from{opacity:0;transform:translateX(60px);}to{opacity:1;transform:translateX(0);}}
+.ph-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.3rem);font-weight:300;color:rgba(240,244,250,.5);max-width:520px;line-height:1.75;opacity:0;animation:fadeUp 1s .6s forwards;position:relative;z-index:3;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* REVEAL */
+[data-reveal]{opacity:0;transform:translateY(40px);transition:opacity 1.1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1);}
+[data-reveal].on{opacity:1;transform:translateY(0);}
+[data-reveal][data-d="1"]{transition-delay:.12s;}[data-reveal][data-d="2"]{transition-delay:.24s;}[data-reveal][data-d="3"]{transition-delay:.36s;}[data-reveal][data-d="4"]{transition-delay:.48s;}[data-reveal][data-d="5"]{transition-delay:.6s;}
+
+/* PRICING INTRO */
+.pricing-intro{
+  padding:8rem 8vw 4rem;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6rem;
+  align-items:end;
+  border-bottom:1px solid var(--border);
+}
+.pricing-intro-left h2{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(2.5rem,5vw,5rem);
+  letter-spacing:.05em;
+  line-height:.95;
+  margin-bottom:1.5rem;
+}
+.grad-text{background:linear-gradient(110deg,var(--accent3) 0%,var(--accent2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.pricing-intro-left p{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:1.15rem;
+  font-weight:300;
+  color:rgba(240,244,250,.55);
+  line-height:1.8;
+  max-width:420px;
+}
+.pricing-intro-right{
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+.intro-stat{
+  display:flex;
+  align-items:center;
+  gap:1.5rem;
+  padding:1.5rem 2rem;
+  border:1px solid var(--border);
+  background:var(--surface);
+  position:relative;
+  overflow:hidden;
+}
+.intro-stat::before{
+  content:'';
+  position:absolute;
+  left:0;top:0;bottom:0;
+  width:3px;
+  background:linear-gradient(180deg,var(--accent),var(--accent2));
+}
+.intro-stat-num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:2.5rem;
+  letter-spacing:.05em;
+  background:linear-gradient(135deg,var(--accent3),var(--accent2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  line-height:1;
+  min-width:80px;
+}
+.intro-stat-label{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:300;color:var(--text-mid);line-height:1.5;}
+.intro-stat-label strong{display:block;font-weight:500;color:var(--text);font-size:.9rem;margin-bottom:.2rem;}
+
+/* PRICING GRID */
+.pricing-section{padding:6rem 8vw 8rem;}
+.section-eyebrow{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--accent3);margin-bottom:1rem;display:flex;align-items:center;gap:.8rem;}
+.section-eyebrow::before{content:'';width:28px;height:1px;background:var(--accent3);}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,4vw,4.5rem);letter-spacing:.04em;line-height:.95;margin-bottom:4rem;}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5px;
+  background:var(--border);
+  border:1px solid var(--border);
+  margin-bottom:2rem;
+}
+.price-card{
+  background:var(--bg);
+  padding:3rem 2.5rem;
+  position:relative;
+  transition:background .4s;
+}
+.price-card:hover{background:var(--surface);}
+.price-card.featured{
+  background:var(--surface);
+  position:relative;
+}
+.price-card.featured::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+}
+.price-badge{
+  font-family:'Inter',sans-serif;font-size:.55rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--accent2);
+  border:1px solid rgba(56,182,232,.3);
+  padding:.3rem .8rem;
+  display:inline-block;
+  margin-bottom:1.5rem;
+  background:rgba(56,182,232,.05);
+}
+.price-name{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.6rem;letter-spacing:.1em;
+  color:var(--text);
+  margin-bottom:.5rem;
+}
+.price-desc{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:.95rem;
+  font-weight:300;
+  color:var(--text-mid);
+  line-height:1.7;
+  margin-bottom:2rem;
+  min-height:60px;
+}
+.price-amount{
+  display:flex;
+  align-items:baseline;
+  gap:.4rem;
+  margin-bottom:2.5rem;
+  padding-bottom:2rem;
+  border-bottom:1px solid var(--border);
+}
+.price-currency{
+  font-family:'Inter',sans-serif;font-size:1rem;font-weight:300;color:var(--text-mid);
+  align-self:flex-start;margin-top:.5rem;
+}
+.price-number{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(3rem,4vw,4.5rem);
+  letter-spacing:.02em;
+  line-height:1;
+  background:linear-gradient(135deg,#fff 0%,var(--accent2) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.price-number.featured-price{
+  background:linear-gradient(135deg,var(--accent3) 0%,var(--accent2) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.price-unit{
+  font-family:'Inter',sans-serif;font-size:.7rem;font-weight:400;color:var(--text-dim);letter-spacing:.1em;
+}
+.price-includes{
+  font-family:'Inter',sans-serif;font-size:.58rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--text-dim);margin-bottom:1.2rem;
+}
+.price-features{list-style:none;display:flex;flex-direction:column;gap:.85rem;margin-bottom:2.5rem;}
+.price-features li{
+  font-family:'Inter',sans-serif;font-size:.82rem;font-weight:300;color:var(--text-mid);
+  display:flex;align-items:flex-start;gap:.75rem;line-height:1.5;
+}
+.price-features li::before{
+  content:'—';
+  color:var(--accent3);
+  font-weight:500;
+  flex-shrink:0;
+  margin-top:0;
+}
+.price-cta{
+  display:block;text-align:center;
+  font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  padding:.85rem 1.5rem;
+  border:1px solid var(--border-accent);
+  color:var(--accent2);
+  text-decoration:none;
+  position:relative;overflow:hidden;
+  transition:color .4s;
+  width:100%;
+}
+.price-cta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--accent),var(--accent2));transform:translateX(-101%);transition:transform .5s cubic-bezier(.16,1,.3,1);}
+.price-cta:hover{color:#fff;}.price-cta:hover::before{transform:translateX(0);}
+.price-cta span{position:relative;z-index:1;}
+.price-cta.featured-cta{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;border:none;
+  box-shadow:0 0 40px rgba(20,110,245,.3);
+}
+.price-cta.featured-cta::before{background:rgba(255,255,255,.15);}
+.price-cta.featured-cta:hover{box-shadow:0 0 60px rgba(20,110,245,.55);}
+
+/* INDIVIDUAL SERVICES */
+.services-section{
+  padding:0 8vw 8rem;
+}
+.services-table{
+  border:1px solid var(--border);
+  overflow:hidden;
+}
+.service-row{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr auto;
+  gap:0;
+  border-bottom:1px solid var(--border);
+  transition:background .3s;
+}
+.service-row:last-child{border-bottom:none;}
+.service-row:hover{background:var(--surface);}
+.service-row.header-row{
+  background:var(--surface2);
+  border-bottom:1px solid var(--border-accent);
+}
+.service-row.header-row .sr-cell{
+  font-family:'Inter',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--accent3);
+}
+.sr-cell{
+  padding:1.8rem 2rem;
+  display:flex;align-items:center;
+  border-right:1px solid var(--border);
+  font-family:'Inter',sans-serif;
+}
+.sr-cell:last-child{border-right:none;}
+.sr-name{
+  display:flex;flex-direction:column;gap:.3rem;
+}
+.sr-name-main{font-size:.92rem;font-weight:500;color:var(--text);}
+.sr-name-sub{font-size:.75rem;font-weight:300;color:var(--text-mid);line-height:1.5;}
+.sr-price-low{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.05em;color:var(--text-mid);}
+.sr-price-high{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.05em;background:linear-gradient(135deg,var(--accent3),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.sr-turnaround{font-size:.78rem;font-weight:300;color:var(--text-mid);}
+.sr-btn{
+  font-family:'Inter',sans-serif;font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  padding:.5rem 1.2rem;
+  border:1px solid var(--border-accent);color:var(--accent2);
+  text-decoration:none;white-space:nowrap;
+  position:relative;overflow:hidden;transition:color .4s;
+}
+.sr-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--accent),var(--accent2));transform:translateX(-101%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.sr-btn:hover{color:#fff;}.sr-btn:hover::before{transform:translateX(0);}
+.sr-btn span{position:relative;z-index:1;}
+
+/* FAQ */
+.faq-section{
+  padding:0 8vw 8rem;
+  max-width:900px;
+}
+.faq-item{
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+.faq-q{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:2rem 0;
+  cursor:none;
+  font-family:'Inter',sans-serif;font-size:.95rem;font-weight:500;color:var(--text);
+  transition:color .3s;
+  gap:2rem;
+}
+.faq-q:hover{color:var(--accent2);}
+.faq-icon{
+  width:28px;height:28px;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;color:var(--accent3);flex-shrink:0;
+  transition:transform .4s cubic-bezier(.16,1,.3,1),border-color .3s;
+}
+.faq-item.open .faq-icon{transform:rotate(45deg);border-color:var(--accent3);}
+.faq-a{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:1rem;font-weight:300;color:rgba(240,244,250,.55);
+  line-height:1.85;
+  max-height:0;overflow:hidden;
+  transition:max-height .5s cubic-bezier(.16,1,.3,1),padding .4s;
+}
+.faq-item.open .faq-a{max-height:200px;padding-bottom:2rem;}
+
+/* CTA STRIP */
+.cta-strip{
+  margin:0 8vw 8rem;
+  padding:5rem 6rem;
+  background:var(--surface);
+  border:1px solid var(--border);
+  position:relative;overflow:hidden;
+  display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;
+}
+.cta-strip::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 80% at 0% 50%,rgba(20,110,245,.06) 0%,transparent 60%);
+}
+.cta-strip-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(2rem,3.5vw,3.5rem);
+  letter-spacing:.04em;line-height:.95;
+  position:relative;z-index:1;
+}
+.cta-strip-sub{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:1.05rem;font-weight:300;color:rgba(240,244,250,.5);
+  margin-top:.8rem;line-height:1.7;
+  position:relative;z-index:1;
+}
+.cta-strip-btn{
+  font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  padding:1.1rem 2.8rem;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;text-decoration:none;
+  position:relative;overflow:hidden;white-space:nowrap;
+  transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s;
+  box-shadow:0 0 40px rgba(20,110,245,.3);
+  z-index:1;
+}
+.cta-strip-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transform:translateX(-200%);transition:transform .7s;}
+.cta-strip-btn:hover{transform:translateY(-3px);box-shadow:0 0 60px rgba(20,110,245,.55);}
+.cta-strip-btn:hover::after{transform:translateX(200%);}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:6rem 8vw 4rem;background:var(--bg2);}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:4rem;margin-bottom:5rem;}
+.footer-brand-name{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.15em;background:linear-gradient(90deg,#fff,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.6rem;}
+.footer-brand p{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:300;line-height:1.8;color:var(--text-mid);margin-top:.6rem;max-width:280px;}
+.footer-col h4{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--accent3);margin-bottom:1.5rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.9rem;}
+.footer-col a{font-family:'Inter',sans-serif;font-size:.85rem;font-weight:300;color:var(--text-mid);text-decoration:none;transition:color .3s,letter-spacing .3s;}
+.footer-col a:hover{color:var(--text);letter-spacing:.03em;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--border);padding-top:2.5rem;}
+.footer-copy{font-family:'Inter',sans-serif;font-size:.75rem;font-weight:300;color:var(--text-dim);letter-spacing:.08em;}
+.footer-socials{display:flex;gap:1.5rem;}
+.footer-socials a{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--text-dim);text-decoration:none;transition:color .3s;position:relative;padding-bottom:2px;}
+.footer-socials a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--accent3);transform:scaleX(0);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.footer-socials a:hover{color:var(--accent2);}.footer-socials a:hover::after{transform:scaleX(1);}
+
+@media(max-width:1024px){
+  .pricing-grid{grid-template-columns:1fr 1fr;}
+  .pricing-intro{grid-template-columns:1fr;}
+  .service-row{grid-template-columns:2fr 1fr 1fr;}
+  .service-row .sr-cell:last-child{display:none;}
+}
+@media(max-width:768px){
+  nav{padding:1.4rem 5vw;}.nav-links{display:none;}.nav-cta{display:none;}
+  .hamburger{display:flex;}.mobile-menu{display:flex;}
+  .page-header{padding:16vh 5vw 8vh;}
+  .pricing-grid{grid-template-columns:1fr;}
+  .pricing-intro{padding:5rem 5vw 3rem;}
+  .pricing-section,.services-section,.faq-section{padding-left:5vw;padding-right:5vw;}
+  .cta-strip{margin:0 5vw 6rem;padding:3rem 2.5rem;grid-template-columns:1fr;}
+  .service-row{grid-template-columns:1fr 1fr;}
+  .service-row .sr-cell:nth-child(3){display:none;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:500px){
+  .pricing-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- CURTAIN -->
+<div id="curtain">
+  <div class="curtain-logo">CWW</div>
+</div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">CWW Ventures</span>
+    <span class="nav-logo-sub">AI · Design · Development</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work &amp; Services</a></li>
+    <li><a href="pricing.html" class="active">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta"><span>Start a Project</span></a>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="work.html">Work &amp; Services</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<header class="page-header">
+  <div class="hero-lines"></div>
+  <canvas id="particles"></canvas>
+  <p class="ph-label">Transparent Pricing</p>
+  <h1 class="ph-title">
+    <span class="line1">WHAT</span>
+    <span class="line2">IT COSTS.</span>
+  </h1>
+  <p class="ph-sub">No agency markup. No hidden fees. AI-powered speed means you get elite output at a fraction of the traditional price.</p>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Logo Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Dashboards <span class="marquee-dot"></span></span>
+    <span class="marquee-item">App UI <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Fast Delivery <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Logo Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Dashboards <span class="marquee-dot"></span></span>
+    <span class="marquee-item">App UI <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Fast Delivery <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="pricing-intro">
+  <div class="pricing-intro-left" data-reveal>
+    <h2>AGENCY QUALITY.<br><span class="grad-text">STARTUP PRICE.</span></h2>
+    <p>We combine AI tools with real design expertise to ship faster and cheaper than any traditional agency — without cutting a single corner.</p>
+  </div>
+  <div class="pricing-intro-right">
+    <div class="intro-stat" data-reveal data-d="1">
+      <div class="intro-stat-num">24H</div>
+      <div class="intro-stat-label"><strong>Same-Day Quotes</strong>Send your brief, get a full price and timeline back within hours.</div>
+    </div>
+    <div class="intro-stat" data-reveal data-d="2">
+      <div class="intro-stat-num">3–5x</div>
+      <div class="intro-stat-label"><strong>Faster Than Agencies</strong>AI-assisted workflow means days, not weeks or months.</div>
+    </div>
+    <div class="intro-stat" data-reveal data-d="3">
+      <div class="intro-stat-num">0</div>
+      <div class="intro-stat-label"><strong>Hidden Fees</strong>Price agreed upfront. No scope creep surprises.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING TIERS -->
+<section class="pricing-section">
+  <p class="section-eyebrow" data-reveal>Service Tiers</p>
+  <h2 class="section-title" data-reveal>PICK YOUR <span class="grad-text">TIER.</span></h2>
+
+  <div class="pricing-grid" data-reveal>
+
+    <!-- STARTER -->
+    <div class="price-card">
+      <div class="price-badge">Starter</div>
+      <div class="price-name">Essential</div>
+      <div class="price-desc">Single deliverable. Perfect for new brands that need one thing done right.</div>
+      <div class="price-amount">
+        <span class="price-currency">from</span>
+        <span class="price-number">$350</span>
+      </div>
+      <div class="price-includes">What's included</div>
+      <ul class="price-features">
+        <li>Logo OR landing page (pick one)</li>
+        <li>2 design concepts</li>
+        <li>2 revision rounds</li>
+        <li>Final files delivered in 3–5 days</li>
+        <li>PNG, SVG, or HTML export</li>
+      </ul>
+      <a href="contact.html" class="price-cta"><span>Get a Quote →</span></a>
+    </div>
+
+    <!-- PRO — FEATURED -->
+    <div class="price-card featured">
+      <div class="price-badge">Most Popular</div>
+      <div class="price-name">Professional</div>
+      <div class="price-desc">Full website or app UI. The complete package for serious businesses ready to stand out.</div>
+      <div class="price-amount">
+        <span class="price-currency">from</span>
+        <span class="price-number featured-price">$1,500</span>
+      </div>
+      <div class="price-includes">What's included</div>
+      <ul class="price-features">
+        <li>Full website (3–5 pages) OR dashboard UI</li>
+        <li>Animations &amp; interactive effects</li>
+        <li>Mobile-responsive design</li>
+        <li>Contact form &amp; Firebase hosting setup</li>
+        <li>3 revision rounds</li>
+        <li>Delivered in 5–10 days</li>
+      </ul>
+      <a href="contact.html" class="price-cta featured-cta"><span>Start a Project →</span></a>
+    </div>
+
+    <!-- STUDIO -->
+    <div class="price-card">
+      <div class="price-badge">Studio</div>
+      <div class="price-name">Full Build</div>
+      <div class="price-desc">End-to-end brand + digital presence. Logo, site, app UI, and brand guide — all cohesive.</div>
+      <div class="price-amount">
+        <span class="price-currency">from</span>
+        <span class="price-number">$3,500</span>
+      </div>
+      <div class="price-includes">What's included</div>
+      <ul class="price-features">
+        <li>Logo identity suite</li>
+        <li>Full multi-page website</li>
+        <li>Dashboard or app UI</li>
+        <li>Brand style guide</li>
+        <li>Unlimited revisions during build</li>
+        <li>Delivered in 2–3 weeks</li>
+      </ul>
+      <a href="contact.html" class="price-cta"><span>Get a Quote →</span></a>
+    </div>
+
+  </div>
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem;color:var(--text-dim);text-align:right;margin-top:1rem;" data-reveal>All prices are starting points. Custom scopes quoted individually.</p>
+</section>
+
+<!-- INDIVIDUAL SERVICES TABLE -->
+<section class="services-section">
+  <p class="section-eyebrow" data-reveal>À La Carte</p>
+  <h2 class="section-title" data-reveal>INDIVIDUAL <span class="grad-text">SERVICES.</span></h2>
+
+  <div class="services-table" data-reveal>
+    <div class="service-row header-row">
+      <div class="sr-cell">Service</div>
+      <div class="sr-cell">Starting Price</div>
+      <div class="sr-cell">Turnaround</div>
+      <div class="sr-cell"></div>
+    </div>
+    <div class="service-row">
+      <div class="sr-cell">
+        <div class="sr-name">
+          <span class="sr-name-main">Logo Design</span>
+          <span class="sr-name-sub">3 concepts, 2 revisions, PNG + SVG delivery</span>
+        </div>
+      </div>
+      <div class="sr-cell"><span class="sr-price-low">$350 </span><span class="sr-price-high">– $600</span></div>
+      <div class="sr-cell"><span class="sr-turnaround">3–5 days</span></div>
+      <div class="sr-cell"><a href="contact.html" class="sr-btn"><span>Book</span></a></div>
+    </div>
+    <div class="service-row">
+      <div class="sr-cell">
+        <div class="sr-name">
+          <span class="sr-name-main">Brand Identity Suite</span>
+          <span class="sr-name-sub">Logo + color system + typography + style guide</span>
+        </div>
+      </div>
+      <div class="sr-cell"><span class="sr-price-low">$800 </span><span class="sr-price-high">– $1,800</span></div>
+      <div class="sr-cell"><span class="sr-turnaround">5–10 days</span></div>
+      <div class="sr-cell"><a href="contact.html" class="sr-btn"><span>Book</span></a></div>
+    </div>
+    <div class="service-row">
+      <div class="sr-cell">
+        <div class="sr-name">
+          <span class="sr-name-main">Landing Page</span>
+          <span class="sr-name-sub">1-page site, animated, mobile-ready, hosted</span>
+        </div>
+      </div>
+      <div class="sr-cell"><span class="sr-price-low">$800 </span><span class="sr-price-high">– $1,500</span></div>
+      <div class="sr-cell"><span class="sr-turnaround">3–7 days</span></div>
+      <div class="sr-cell"><a href="contact.html" class="sr-btn"><span>Book</span></a></div>
+    </div>
+    <div class="service-row">
+      <div class="sr-cell">
+        <div class="sr-name">
+          <span class="sr-name-main">Full Website</span>
+          <span class="sr-name-sub">3–5 pages, contact form, Firebase hosted</span>
+        </div>
+      </div>
+      <div class="sr-cell"><span class="sr-price-low">$1,500 </span><span class="sr-price-high">– $3,500</span></div>
+      <div class="sr-cell"><span class="sr-turnaround">7–14 days</span></div>
+      <div class="sr-cell"><a href="contact.html" class="sr-btn"><span>Book</span></a></div>
+    </div>
+    <div class="service-row">
+      <div class="sr-cell">
+        <div class="sr-name">
+          <span class="sr-name-main">Dashboard / Web App UI</span>
+          <span class="sr-name-sub">Custom data UI, admin panel, full interactivity</span>
+        </div>
+      </div>
+      <div class="sr-cell"><span class="sr-price-low">$2,500 </span><span class="sr-price-high">– $6,000</span></div>
+      <div class="sr-cell"><span class="sr-turnaround">10–21 days</span></div>
+      <div class="sr-cell"><a href="contact.html" class="sr-btn"><span>Book</span></a></div>
+    </div>
+    <div class="service-row">
+      <div class="sr-cell">
+        <div class="sr-name">
+          <span class="sr-name-main">Mobile App UI</span>
+          <span class="sr-name-sub">Full screen designs, interactive prototype</span>
+        </div>
+      </div>
+      <div class="sr-cell"><span class="sr-price-low">$2,000 </span><span class="sr-price-high">– $4,500</span></div>
+      <div class="sr-cell"><span class="sr-turnaround">7–18 days</span></div>
+      <div class="sr-cell"><a href="contact.html" class="sr-btn"><span>Book</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <p class="section-eyebrow" data-reveal>Questions</p>
+  <h2 class="section-title" data-reveal>COMMON <span class="grad-text">QUESTIONS.</span></h2>
+
+  <div class="faq-item" data-reveal>
+    <div class="faq-q">How do I pay?<div class="faq-icon">+</div></div>
+    <div class="faq-a">We use Stripe for all payments. Once we scope your project, you'll receive a secure Stripe payment link. We take 50% upfront and 50% on delivery — no surprises.</div>
+  </div>
+  <div class="faq-item" data-reveal data-d="1">
+    <div class="faq-q">What if I need changes after delivery?<div class="faq-icon">+</div></div>
+    <div class="faq-a">All packages include revision rounds built in. Additional revisions beyond the included rounds are billed at a flat hourly rate we agree on upfront. We're flexible — we want you to love the result.</div>
+  </div>
+  <div class="faq-item" data-reveal data-d="2">
+    <div class="faq-q">How fast can you actually deliver?<div class="faq-icon">+</div></div>
+    <div class="faq-a">Our AI-assisted workflow lets us move 3–5x faster than a traditional agency. A logo can be done in 24–48 hours. A full website in under a week. Rush delivery is available for an additional fee.</div>
+  </div>
+  <div class="faq-item" data-reveal data-d="3">
+    <div class="faq-q">Do I own everything you build?<div class="faq-icon">+</div></div>
+    <div class="faq-a">Yes. 100%. Once final payment is received, all files, source code, and assets transfer fully to you. No licensing, no recurring fees, no strings attached.</div>
+  </div>
+  <div class="faq-item" data-reveal data-d="4">
+    <div class="faq-q">Can you work with my existing brand?<div class="faq-icon">+</div></div>
+    <div class="faq-a">Absolutely. Send us your existing logo, colors, and fonts and we'll build your new site or app to match. Or if you want to evolve the brand, we can do that too.</div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip" data-reveal>
+  <div>
+    <div class="cta-strip-title">READY TO <span class="grad-text">BUILD?</span></div>
+    <p class="cta-strip-sub">Tell us your project. We'll come back with a quote same day.</p>
+  </div>
+  <a href="contact.html" class="cta-strip-btn">Start a Project →</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-name">CWW Ventures</div>
+      <p>AI · Logo · Apps · Web Design. We build digital experiences that make people stop and say — <em>damn.</em></p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="work.html#services">Web Design</a></li>
+        <li><a href="work.html#services">App Development</a></li>
+        <li><a href="work.html#services">Dashboards</a></li>
+        <li><a href="work.html#services">Logo Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work &amp; Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mailto:cwwventures20@gmail.com">cwwventures20@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 CWW Ventures — All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="#">Instagram</a><a href="#">Twitter / X</a><a href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/pricing.js"></script>
+</body>
+</html>
