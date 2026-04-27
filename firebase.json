@@ -1,5 +1,9 @@
 {
+  "firestore": {
+    "rules": "firestore.rules"
+  },
   "hosting": {
+    "site": "cwwventures",
     "public": ".",
     "ignore": ["firebase.json", "**/.*"],
     "rewrites": [],

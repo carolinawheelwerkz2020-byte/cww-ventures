@@ -1,0 +1,43 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isText(field, limit) {
+      return field is string && field.size() <= limit;
+    }
+
+    match /contacts/{contactId} {
+      allow create: if request.resource.data.keys().hasOnly([
+          'name',
+          'email',
+          'company',
+          'service',
+          'budget',
+          'message',
+          'recaptchaToken',
+          'source',
+          'userAgent',
+          'createdAt'
+        ])
+        && isText(request.resource.data.name, 120)
+        && request.resource.data.name.size() > 0
+        && isText(request.resource.data.email, 180)
+        && request.resource.data.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')
+        && isText(request.resource.data.company, 180)
+        && isText(request.resource.data['service'], 40)
+        && isText(request.resource.data.budget, 40)
+        && isText(request.resource.data.message, 2500)
+        && isText(request.resource.data.recaptchaToken, 4096)
+        && request.resource.data.recaptchaToken.size() > 0
+        && request.resource.data.source == 'cwwventures.com'
+        && isText(request.resource.data.userAgent, 240)
+        && request.resource.data.createdAt == request.time;
+
+      allow read, update, delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

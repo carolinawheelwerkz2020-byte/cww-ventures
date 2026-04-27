@@ -1,0 +1,16 @@
+{
+  "name": "CWW Ventures",
+  "short_name": "CWW",
+  "description": "AI-powered web design, apps, dashboards, and brand identity.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#04080f",
+  "theme_color": "#146EF5",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

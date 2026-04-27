@@ -1,0 +1,24 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#04080f"/>
+      <stop offset=".55" stop-color="#08172b"/>
+      <stop offset="1" stop-color="#146EF5"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#4d9fff"/>
+      <stop offset="1" stop-color="#38b6e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#4d9fff">
+    <path d="M0 120H1200M0 240H1200M0 360H1200M0 480H1200M160 0V630M320 0V630M480 0V630M640 0V630M800 0V630M960 0V630"/>
+  </g>
+  <circle cx="970" cy="120" r="250" fill="#38b6e8" opacity=".12"/>
+  <circle cx="170" cy="500" r="220" fill="#146EF5" opacity=".18"/>
+  <rect x="72" y="74" width="1056" height="482" rx="28" fill="none" stroke="rgba(77,159,255,.32)" stroke-width="2"/>
+  <text x="96" y="170" fill="#6a8aaa" font-family="Inter,Arial,sans-serif" font-size="28" letter-spacing="9">AI  DESIGN  DEVELOPMENT</text>
+  <text x="92" y="325" fill="#f0f4fa" font-family="Arial Black,Impact,sans-serif" font-size="112" letter-spacing="5">CWW VENTURES</text>
+  <rect x="96" y="376" width="510" height="5" fill="url(#line)"/>
+  <text x="96" y="452" fill="#c6d6e8" font-family="Inter,Arial,sans-serif" font-size="34">Cinematic websites, apps, dashboards, and brand identities.</text>
+</svg>

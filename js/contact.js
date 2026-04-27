@@ -45,18 +45,32 @@ const db=firebase.firestore();
 
 // FORM — reCAPTCHA v3 protected
 const RECAPTCHA_SITE_KEY = '6LfgUKwsAAAAAEDCu_aAL_vK0kkj98cz3oOOVGnu';
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_LEN = {
+  name: 120,
+  email: 180,
+  company: 180,
+  service: 40,
+  budget: 40,
+  message: 2500
+};
+
+const clean = (value, max) => value.trim().slice(0, max);
 
 document.getElementById('contact-form').addEventListener('submit',async e=>{
   e.preventDefault();
   const form=e.target;
-  const name=document.getElementById('name').value.trim();
-  const email=document.getElementById('email').value.trim();
-  const company=document.getElementById('company').value.trim();
-  const service=document.getElementById('service').value;
-  const budget=document.getElementById('budget').value;
-  const message=document.getElementById('message').value.trim();
+  const name=clean(document.getElementById('name').value,MAX_LEN.name);
+  const email=clean(document.getElementById('email').value,MAX_LEN.email).toLowerCase();
+  const company=clean(document.getElementById('company').value,MAX_LEN.company);
+  const service=clean(document.getElementById('service').value,MAX_LEN.service);
+  const budget=clean(document.getElementById('budget').value,MAX_LEN.budget);
+  const message=clean(document.getElementById('message').value,MAX_LEN.message);
+  const website=document.getElementById('website')?.value.trim();
 
+  if(website){return;}
   if(!name||!email){alert('Name and email required.');return;}
+  if(!EMAIL_RE.test(email)){alert('Please enter a valid email address.');return;}
 
   form.style.opacity='.4';form.style.pointerEvents='none';
   const btn=form.querySelector('.btn-submit');
@@ -77,6 +91,8 @@ document.getElementById('contact-form').addEventListener('submit',async e=>{
     await db.collection('contacts').add({
       name,email,company,service,budget,message,
       recaptchaToken,
+      source:'cwwventures.com',
+      userAgent:navigator.userAgent.slice(0,240),
       createdAt:firebase.firestore.FieldValue.serverTimestamp()
     });
     form.style.display='none';
