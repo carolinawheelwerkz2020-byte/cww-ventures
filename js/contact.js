@@ -32,15 +32,6 @@ chips.forEach(chip=>{
   });
 });
 
-// FIREBASE
-firebase.initializeApp({
-  apiKey:"AIzaSyCVhNqBM_ZLcDW_4tV7VESU_iJZgXUsTiA",
-  authDomain:"cwwventures.firebaseapp.com",
-  projectId:"cwwventures",
-  storageBucket:"cwwventures.firebasestorage.app",
-  messagingSenderId:"455081884418",
-  appId:"1:455081884418:web:b7f2b5e253e1460ff0a01b"
-});
 const db=firebase.firestore();
 
 // FORM — reCAPTCHA v3 protected
